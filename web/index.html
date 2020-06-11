@@ -6,6 +6,7 @@
     <title>MomentJs</title>
 </head>
 <body>
+    <h1>Moment Js</h1>
     <script src="lib/moment.min.js"></script>
     <script>
         const  m = moment();
@@ -26,6 +27,22 @@
         m.minutes(11);
         m.hour(2);
         console.log(moment());
+
+        //isSame function 
+        console.log(moment("2020-02-04").isSame("2020-02-03"));
+
+        //isBefore function
+        console.log(moment("2020-02-04").isBefore("2019-02-04"));
+
+        //isAfter function
+        console.log(moment("2020-02-04").isAfter("2019-02-04"));
+
+        //isSameOrBefore
+        console.log(moment("2020-02-04").isSameOrBefore("2019-02-04"));
+
+        const m1 = moment("2020-02-03");
+        const m2 = moment("2020-03-04");
+        console.log(m1.isBetween(`yes or nor  ${m2}`));
 
 
     </script>
