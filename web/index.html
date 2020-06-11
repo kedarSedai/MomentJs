@@ -8,7 +8,26 @@
 <body>
     <script src="lib/moment.min.js"></script>
     <script>
+        const  m = moment();
+        // console.log(moment());
+
+        //Parsing date and time Strings
+        console.log(`By using toString() => ${m.toString()}`);
+        console.log(`By using toISOString() => ${m.toISOString()}`);
+        // console.log(m.toString())
+
+        //Getting units
+        console.log(m.minutes());
+        console.log(m.hour());
+        console.log(m.weeks());
+        console.log(m.quarter()); //console.log(m.get("quarter"));
+
+        //Setting uints 
+        m.minutes(11);
+        m.hour(2);
         console.log(moment());
+
+
     </script>
 </body>
 </html>
